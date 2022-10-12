@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather man app</title>
+    
+    <!-- font stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <header class="container-fluid text-center text-white bg-dark p-2">
+     <h1> Weatherman , weatherman whats the forecast today ? </h1>
+    </header>
+    
+    <!-- Container for Search element -->
+    <section class="container-fluid">
+        <div class="row col-12 text-center">
+                <h1> Weather Dashboard </h1>
+        </div>
+        
+        <div class="row content-row" id="searcher">
+            <div class="col-12 col-md-3 bg-light pt-3">
+                <h4> Choose A City </h4>
+            </div>
+        </div>
+        
+        <!-- search button -->
+                <form>
+                    <div class="form-group input-group">
+                        <input type="text" class="form-control" id="search-city" placeholder="enter city here">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button">Search
+                                <i class="fas fa-search"></i>   *
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                
+                <!-- search history -->
+                
+                <section class="card">
+                        <ul class="list-group" id="search-history">
+
+                        </ul>
+                </section>
+
+        
+
+            <!-- Weather information -->
+            <section id="weatherContent" class="col-12 col-md-9 hide">
+                <div class="row">
+                    <div id="cityInfo" class="border rounded my-3 px-3 py-3">
+                            <h2 id="currentCity"> City Info </h2>
+                            <p class="mb-0">Temperature: <span id="currenTemp"></span></p>
+                            <p class="mb-0">Wind Speed: <span id="windSpeed"></span></p>
+                            <p class="mb-0">Humidity: <span id="currentHumidity"></span></p>
+                            <p class="mb-0">UV index: <span id="uvIndex"></span></p>
+                    </div>
+                    
+                </div>
+            </section>
+            
+
+            <div class="row">
+                <div class="col-12">
+                    <h6>5 day forecast</h6>
+                </div>
+            </div>
+            
+            <section id="five-day" class="row">
+                <div class="col-2">
+                    <div class="card">
+                        
+ 
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+    </div>
+    <script src="./assets/script.js"></script>
+</body>    
+</html>
