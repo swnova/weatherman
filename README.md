@@ -1,4 +1,4 @@
-# weatherman
+# Weatherman
 Module 6 Challenge Weather Dashboard
 
 https://swnova.github.io/weatherman/
