@@ -1,0 +1,16 @@
+.column {
+    /* float: ; */
+    width: 25%;
+    padding: 0 10px;
+}
+.card {
+    display: flexbox;
+
+
+}
+#five-day {
+    padding: 1%;
+    height: 50%;
+    width: 75%; 
+} 
+
